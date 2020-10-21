@@ -19,6 +19,9 @@ class usuarioDAO
             $usuario = new usuarioVO();
             $usuario->setUsuarioId($resultado['usuarioId']);
             $usuario->setUsuarioNombre($resultado['usuarioNombre']);
+            $usuario->setUsuarioTelefono($resultado['usuarioTelefono']);
+            $usuario->setUsuarioCorreo($resultado['usuarioCorreo']);
+            
             $array[$cont]=$usuario;
             $cont++;
         }
