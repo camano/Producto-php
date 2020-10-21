@@ -24,10 +24,9 @@
         <div id="page-content-wrapper">
             <?php include "./View/Contenido/navbar.php"; ?>
             <!-- /#page-content-wrapper -->
-            <div class="container">
-                <br>
+        <input type="hidden" id="url" value="<?php echo SERVERURL; ?>">
                 <?php require_once $vistas; ?>
-            </div>
+            
         </div>
     </div>
 </body>
