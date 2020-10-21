@@ -3,6 +3,7 @@
 <script src="<?php echo SERVERURL; ?>View/Js/bootstrap.min.js"></script>
 <script src="<?php echo SERVERURL; ?>View/Scripts/modal.js"></script>
 <script src="<?php echo SERVERURL; ?>View/Scripts/usuario.js"></script>
+<script src="<?php echo SERVERURL; ?>View/Scripts/modal.js"></script>
 <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();

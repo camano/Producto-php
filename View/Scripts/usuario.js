@@ -1,5 +1,8 @@
 $(document).ready(function() {
     listarusuario();
+    $('#btn').click(function() {
+        alert("hola");
+    })
 
 });
 
