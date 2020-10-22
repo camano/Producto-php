@@ -6,11 +6,8 @@ class usuarioVO
     public $usuarioTelefono;
     public $usuarioCorreo;
     public $usuarioClave;
+    public $usuarioEstado;
     public $rolVO;
-
-
-  
-
     /**
      * Get the value of usuarioId
      */ 
@@ -127,6 +124,26 @@ class usuarioVO
     public function setRolVO($rolVO)
     {
         $this->rolVO = $rolVO;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of usuarioEstado
+     */ 
+    public function getUsuarioEstado()
+    {
+        return $this->usuarioEstado;
+    }
+
+    /**
+     * Set the value of usuarioEstado
+     *
+     * @return  self
+     */ 
+    public function setUsuarioEstado($usuarioEstado)
+    {
+        $this->usuarioEstado = $usuarioEstado;
 
         return $this;
     }
