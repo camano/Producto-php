@@ -35,22 +35,13 @@ function eliminarusuario(id) {
                 method: "post",
                 data: { idusuario: id, metodo: "eliminar" },
                 success: function(e) {
+                    var alerta = JSON.parse(e);
+                    alertas_ajax(alerta);
 
-                    Swal.fire({
-                        title: e.Titulo,
-                        text: e.Texto,
-                        type: e.Tipo,
-                        confirmButtonText: 'Aceptar'
-                    });
-                    listarusuario();
                 },
                 error: function(error) {
-                    Swal.fire({
-                        title: error.Titulo,
-                        text: error.Texto,
-                        type: error.Tipo,
-                        confirmButtonText: 'Aceptar'
-                    });
+                    var alerta = JSON.parse(error);
+                    alertas_ajax(alerta);
 
                 },
             });
