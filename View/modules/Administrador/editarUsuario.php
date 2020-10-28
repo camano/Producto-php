@@ -1,12 +1,13 @@
 
 <form action="" id="formEditarUsuario" method="POST" class="" data-form="">
     <input type="hidden" name="usuarioId" id="usuarioId">
+    <input type="hidden" name="metodo" value="editarusuario">
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputEmail4">Usuario</label>
 
             <div class="formulario__grupo-input">
-                <input type="text" name="usuarioNombre" id="usuarioNombre" class="form-control" id="inputEmail4">
+                <input type="text" name="usuarioNombre" id="usuarioNombre" class="form-control" >
                 
             </div>
         </div>
@@ -20,7 +21,10 @@
         </div>
         <div class="form-group col-md-6">
             <label for="inputPassword4">Rol</label>
-            <input type="text" name="" class="form-control"  id="inputPassword4">
+            <select name="rolId" class="form-control" id="usuarioRol">
+                <option value="1">Administrador</option>
+                <option value="2">Usuario</option>
+            </select>
             
         </div>
        

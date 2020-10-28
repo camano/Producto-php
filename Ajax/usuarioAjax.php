@@ -17,4 +17,10 @@ switch ($metodo) {
     case "eliminar":
         echo $usuario->eliminar_usuario_controlador();
         break;
+    case "consultarusuario":
+        echo $usuario->controlador_consultar_usuario();
+        break;
+        case "editarusuario":
+            echo $usuario->controlador_editar_usuario();
+        break;
 }

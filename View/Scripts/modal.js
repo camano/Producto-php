@@ -1,6 +1,7 @@
-function desplejarmodal(url) {
-    $(".modal-body").load(url);
-    $(".modal-title").html("hola");
+function desplejarmodal(url, Titulo) {
+    var u = $('#url').val();
+    $(".modal-body").load(u + url);
+    $(".modal-title").html(Titulo);
     $(".modal-footer").html("<input type='hidden' id='id' value='" + $('#id').val() + "'>");
     $("#Modal").modal();
 
